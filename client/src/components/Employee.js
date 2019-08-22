@@ -47,7 +47,7 @@ class Employee extends Component {
       <div className='employee'>
         { !this.state.isToggled ?
         <div className='table'>
-          <h5 className='header'>Employee Id:</h5>
+          <h5 className='header'>Employee ID:</h5>
           <p>{employeeId}</p>
           <h5 className='header'>First Name:</h5>
           <p>{firstName}</p>
