@@ -42,7 +42,7 @@ class Employee extends Component {
   }
 
   render() {
-    const { employeeId, firstName, lastName, email, phoneNumber, _id, deleteEmployee } = this.props
+    const { employeeId, firstName, lastName, email, phoneNumber, _id, deleteEmployee } = this.props;
     return (
       <div className='employee'>
         { !this.state.isToggled ?
@@ -58,8 +58,8 @@ class Employee extends Component {
           <h5 className='header'>Phone Number:</h5>
           <p>{phoneNumber}</p>
           <p className='employeeButtons'>
-            <button className='btn btn-sm btn-warning' onClick={this.toggler}>Edit</button>
-            <button className='btn btn-sm btn-danger' onClick={() => deleteEmployee(_id)}>Delete</button>
+            <button className='btn btn-sm btn-outline-info' onClick={this.toggler}>Edit</button>
+            <button className='btn btn-sm btn-outline-danger' onClick={() => deleteEmployee(_id)}>Delete</button>
           </p>
         </div>
         :

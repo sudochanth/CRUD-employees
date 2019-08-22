@@ -27,6 +27,8 @@ class App extends Component {
         })
       })
       .catch(err => console.log(err))
+      console.log('mounted')
+      console.log(this.state.employees)
   }
 
   onHandleChange = (e) => {
@@ -90,6 +92,7 @@ class App extends Component {
   render() {
     return (
       <div id='background'>
+      <div>
         <Navbar visibleToggle={this.visibleToggle} />
         { !this.state.isVisible ?
           <span></span> 
@@ -111,6 +114,7 @@ class App extends Component {
           deleteEmployee={this.deleteEmployee}
           editEmployee={this.editEmployee} 
           visibleToggle={this.visibleToggle} />
+      </div>
       </div>
     );
   }
