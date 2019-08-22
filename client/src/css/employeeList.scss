@@ -1,0 +1,21 @@
+.employeeList {
+  padding: 2% 1% 0 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffffe3;
+
+  .employeeHeader {
+    padding: 25px 100px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(230, 230, 230);
+
+    @media screen and (max-width: 1040px) {
+      display: none
+    }
+  }
+}

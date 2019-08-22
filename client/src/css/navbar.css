@@ -1,0 +1,46 @@
+.navbar {
+  background-color: #5e9ef1;
+  -webkit-transition: background-color 1.7s ease-in-out;
+  transition: background-color 1.7s ease-in-out;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 1040px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar:hover a {
+  color: #5e9ef1;
+}
+/*# sourceMappingURL=navbar.css.map */

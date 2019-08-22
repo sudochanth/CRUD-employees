@@ -1,0 +1,48 @@
+$large: 1040px;
+
+$border-bottom: 2px solid rgb(230, 230, 230);
+
+.employee {
+  border-bottom: $border-bottom;  
+  .header {
+    display: none;
+  }
+}
+
+.table {
+  padding: 25px 100px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+  @media screen and (max-width: $large) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .header {
+      display: block;
+      font-weight: bold;
+    }
+
+    p {
+      justify-content: center;
+      align-content: center;
+    }
+  }
+}
+
+.editForm, .closeButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .closeButton {
+    width: 25%;
+
+  }
+}

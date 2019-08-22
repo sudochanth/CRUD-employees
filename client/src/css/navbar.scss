@@ -1,0 +1,33 @@
+$primary-color: #5e9ef1;
+$secondary-color: rgba(255, 255, 255, 0);
+
+.navbar {
+  background-color: $primary-color;
+  transition: background-color 1.7s ease-in-out;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  a {
+    text-decoration: none;
+    // margin: 5%;
+    color: white;
+    font-size: 2em;
+  }
+
+  @media screen and (max-width: 1040px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.navbar:hover {
+  background-color: $secondary-color;
+  
+  a {
+    color: $primary-color;
+  }
+}

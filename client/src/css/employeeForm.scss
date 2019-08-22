@@ -1,0 +1,19 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  background-color: white;
+  width: 75%;
+  border-radius: 25px;
+
+  input {
+    margin: 1rem;
+  }
+}
